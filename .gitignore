@@ -1,0 +1,8 @@
+
+# Secrets, virtual env, and local artifacts
+variables.env
+.env
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
