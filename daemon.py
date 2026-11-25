@@ -25,7 +25,7 @@ worker_id = "cvs-coupon-sync-daemon"
 # Safety check: Warn if credentials are missing
 if not SUPABASE_URL or not SUPABASE_SERVICE_KEY:
     print("WARNING: SUPABASE_URL or SUPABASE_SERVICE_KEY not found in environment variables!")
-
+    sys.exit(1)
 
 
 def handle_sigterm(signum, frame):
